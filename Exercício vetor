@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+main(){
+int vetor[5],vetor1[5],juncao[10];
+
+
+    for(int i=0;i<10;i++){ // zerar a memoria de juncao
+        juncao[i]=0;
+        //cout << soma[i] << endl;
+    }
+
+    cout << "------------------------------------" << endl;
+    for (int i=0;i<5;i++){
+        cout<< "Vetor[1] Posicao (" << i << "): ";
+        cin >> vetor[i];
+        cout << endl;
+    }
+
+    cout << "------------------------------------" << endl;
+
+    for (int i=0;i<5;i++){
+        cout<< "Vetor[2] Posicao (" << i << "): ";
+        cin >> vetor1[i];
+        cout << endl;
+    }
+     cout << "------------------------------------" << endl;
+
+     // atribui��o de valores encerrada.
+
+
+
+
+        for(int i=0;i<5;i++){
+                for(int u=0;u<10;u=u+2){
+                        juncao[u]=vetor[i];
+                        }
+                for(int u=1;u<10;u= u+2){
+                        juncao[u]=vetor1[i];
+                        }
+
+        }
+cout << endl << "\t";
+
+     for(int i=0;i<10;i++){
+        if(i<9){
+        cout<< juncao[i] << ",";
+        }else
+        cout << juncao[i] << "." << endl << endl;
+     }
+cout << "------------------------------------" << endl;
+
+}
